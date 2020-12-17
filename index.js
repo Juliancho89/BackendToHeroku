@@ -22,7 +22,7 @@ app.use('/api', apiRouter);
 // })
 
 // ====> o seteando una variable llamada PORT:
-app.set('PORT', 3000);
+app.set('PORT', process.env.PORT || 3000);
 app.listen(app.get('PORT'), () => {
     console.log('server up');
 })
